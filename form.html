@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/reseter.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tpass form</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/Logo.svg" alt="Logo" />
+      <nav>
+        <a href="index.html">Store</a>
+        <a href="index.html">Help & support</a>
+        <button>Download</button>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="title-reg">Регистрация нового пользователя</h1>
+      <form
+        class="reg-form"
+        name="reg-form"
+        method="post"
+        action="//httpbin.org/post"
+      >
+        <p>
+          <label for="name"> Name:</label> <br />
+          <input
+            id="name"
+            class="input-form"
+            name="name"
+            type="text"
+            required
+            placeholder="Name"
+          /><br />
+        </p>
+        <p>
+          <label for="bdate"> Birthday:</label> <br />
+          <input class="input-form" id="bdate" name="bdate" type="date" /><br />
+        </p>
+        <p>
+          Gender: <br />
+          <input type="radio" name="gender" value="Male" /> Male <br />
+          <input type="radio" name="gender" value="Female" /> Female <br />
+          <br />
+        </p>
+        <p>
+          <label for="pass"> Password:</label> <br />
+          <input
+            required
+            id="pass"
+            class="input-form"
+            type="password"
+            name="password"
+            placeholder="Password"
+          /><br />
+        </p>
+        <p>
+          <label for="email"> Email:</label> <br />
+          <input
+            required
+            id="email"
+            class="input-form"
+            type="email"
+            name="email"
+            placeholder="Email"
+          /><br />
+        </p>
+        <p>
+          <label for="tel"> Telephone number:</label> <br />
+          <input
+            required
+            id="tel"
+            class="input-form"
+            type="tel"
+            name="tel"
+            placeholder="Tel.number"
+          /><br />
+        </p>
+
+        <fieldset>
+          <legend>Free time in day:</legend>
+          <br />
+          <input class="" type="checkbox" name="freetime" value="morning" />
+          Morning
+          <br />
+          <input class="" type="checkbox" name="freetime" value="day" /> Day
+          <br />
+          <input class="" type="checkbox" name="freetime" value="evening" />
+          Evening
+          <br />
+          <input class="" type="checkbox" name="freetime" value="night" /> Night
+        </fieldset>
+        <br />
+
+        <br />
+        <button class="button-form reg-bt">Send link</button>
+        <button type="reset" class="button-form reg-bt">Reset</button>
+        <br />
+        <br />
+        <br />
+      </form>
+    </main>
+
+    <footer class="foot">
+      <img class="bg-footer1" src="img/bg-footer.svg" alt="bg" />
+      <img class="bg-footer2" src="img/bg-footer-2.svg" alt="bg" />
+      <img src="img/logo2.svg" alt="logo" />
+      <div class="footer-item">
+        <p>
+          Company <br /><br />
+          <a>Merchant portal</a>
+        </p>
+      </div>
+
+      <div class="footer-item">
+        <p>
+          Support <br /><br />
+          <a>FAQ</a> <br />
+          <a>Terms of service</a> <br />
+          <a>Privacy policy</a> <br />
+        </p>
+      </div>
+
+      <div class="footer-item">
+        <p>
+          Follow us <br /><br />
+          <a>Twitter</a> <br />
+          <a>Instagram</a> <br />
+          <a>Facebook</a> <br />
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
